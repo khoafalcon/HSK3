@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#edf4f5">
+  <meta name="color-scheme" content="light dark">
+  <title>HSK3 · Không gian học tiếng Trung</title>
+  <script>
+    try { const theme = localStorage.getItem('hsk3clone_theme'); if (theme === 'light' || theme === 'dark') document.documentElement.dataset.theme = theme; } catch (_) {}
+  </script>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/practice.css">
+</head>
+<body>
+  <svg class="icon-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <symbol id="i-book" viewBox="0 0 24 24"><path d="M12 5.5C8.8 3.4 5.3 3.3 3 4v15c3-.9 6-.4 9 1.5 3-1.9 6-2.4 9-1.5V4c-2.3-.7-5.8-.6-9 1.5Zm0 0v15"/></symbol>
+    <symbol id="i-layers" viewBox="0 0 24 24"><path d="m12 3 9 5-9 5-9-5 9-5ZM3 12l9 5 9-5M3 16l9 5 9-5"/></symbol>
+    <symbol id="i-pen" viewBox="0 0 24 24"><path d="m15 5 4 4M4 20l5-1L20 8a2.8 2.8 0 0 0-4-4L5 15l-1 5ZM14 20h7"/></symbol>
+    <symbol id="i-chart" viewBox="0 0 24 24"><path d="M5 20V12m7 8V4m7 16V8"/></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5"/></symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24"><path d="M20.5 14A9 9 0 0 1 10 3.5 9 9 0 1 0 20.5 14Z"/></symbol>
+    <symbol id="i-eye" viewBox="0 0 24 24"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12Z"/><circle cx="12" cy="12" r="3"/></symbol>
+    <symbol id="i-eye-off" viewBox="0 0 24 24"><path d="m3 3 18 18M10 5a12 12 0 0 1 2 0c6.5 0 10 7 10 7a19 19 0 0 1-3 3M6 6a20 20 0 0 0-4 6s3.5 7 10 7c2 0 3.6-.6 5-1.5M10 10a3 3 0 0 0 4 4"/></symbol>
+    <symbol id="i-volume" viewBox="0 0 24 24"><path d="m11 4-6 5H2v6h3l6 5V4Zm4 4a6 6 0 0 1 0 8m3-11a10 10 0 0 1 0 14"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+    <symbol id="i-refresh" viewBox="0 0 24 24"><path d="M20 7v5h-5M4 17v-5h5M5 7a8 8 0 0 1 13-2l2 3M4 16l2 3a8 8 0 0 0 13-2"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h16m-6-6 6 6-6 6"/></symbol>
+    <symbol id="i-left" viewBox="0 0 24 24"><path d="m14 6-6 6 6 6"/></symbol>
+    <symbol id="i-right" viewBox="0 0 24 24"><path d="m10 6 6 6-6 6"/></symbol>
+    <symbol id="i-trash" viewBox="0 0 24 24"><path d="M3 6h18M9 6V3h6v3M5 6l1 15h12l1-15M10 10v7m4-7v7"/></symbol>
+    <symbol id="i-spark" viewBox="0 0 24 24"><path d="m12 3 2.5 6.5L21 12l-6.5 2.5L12 21l-2.5-6.5L3 12l6.5-2.5L12 3Z"/></symbol>
+  </svg>
+  <div class="ambient" aria-hidden="true"><span></span><span></span><span></span></div>
+  <a class="skip-link" href="#main-content">Đến nội dung học</a>
+  <header class="app-header">
+    <div class="brand"><span class="brand-mark" lang="zh">学</span><div><span class="brand-name">HSK<span>3</span></span><span class="brand-caption">Mỗi ngày, tiến một chút.</span></div></div>
+    <div class="header-actions"><span class="course-pill"><span class="live-dot"></span> Không gian học của bạn</span><button class="icon-btn glass" id="theme-toggle" aria-label="Đổi giao diện sáng tối" title="Đổi giao diện sáng tối"><svg class="icon" aria-hidden="true"><use href="#i-moon"/></svg></button><span class="avatar" title="Mã Thị Huyền Bích" aria-label="Mã Thị Huyền Bích">HB</span></div>
+  </header>
+  <main id="main-content" tabindex="-1">
+    <div class="welcome">
+      <div class="welcome-copy"><span class="eyebrow"><span class="tiny-spark">✦</span> TIẾNG TRUNG · HSK 3</span><h1>Học một chút.<br><span>Nhớ lâu hơn.</span></h1><p>Một khoảng nhỏ mỗi ngày, một bước gần hơn<br class="desktop-break"> với tiếng Trung của bạn.</p><div class="course-details"><span>20 bài học</span><i></i><span>314 từ vựng</span><i></i><span>Theo nhịp của bạn</span></div></div>
+      <aside class="journey glass" aria-label="Tổng quan tiến độ từ vựng"><div class="journey-top"><span class="eyebrow">HÀNH TRÌNH CỦA BẠN</span><svg class="icon" aria-hidden="true"><use href="#i-spark"/></svg></div><div class="journey-main"><div class="progress-ring" id="journey-ring"><span id="journey-percent">0<small>%</small></span></div><div><strong id="journey-known">0 <span>/ 314</span></strong><p>từ vựng đã ghi nhớ</p><span class="gentle-note" id="journey-note">Bắt đầu với một từ mới nhé.</span></div></div><button class="journey-link" id="view-progress">Xem tiến độ của bạn <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></button></aside>
+    </div>
+    <section class="panel active" id="panel-vocab" role="tabpanel" aria-labelledby="tab-vocab">
+      <div class="section-heading"><div><span class="eyebrow section-kicker">KHÁM PHÁ & GHI NHỚ</span><h2>Từ vựng</h2><p>Mở từng thẻ, lắng nghe và ghi nhớ theo cách của bạn.</p></div><span class="section-count" id="vocab-lesson-meta">Bài 01</span></div>
+      <div class="lesson-picker glass"><div class="picker-heading"><span>Chọn bài học</span><div class="scroll-actions"><button class="icon-btn small" data-scroll="vocab-lesson-tabs" data-direction="-1" aria-label="Cuộn về bài trước"><svg class="icon" aria-hidden="true"><use href="#i-left"/></svg></button><button class="icon-btn small" data-scroll="vocab-lesson-tabs" data-direction="1" aria-label="Cuộn đến bài sau"><svg class="icon" aria-hidden="true"><use href="#i-right"/></svg></button></div></div><div class="lesson-tabs" id="vocab-lesson-tabs" role="group" aria-label="Bài học từ vựng"></div></div>
+      <div class="study-toolbar"><div class="vocab-progress"><div class="progress-labels"><span id="vocab-pos">0/0 đã đánh giá</span><span id="vocab-known-count">Đã nhớ: 0</span></div><div class="bar" role="progressbar" aria-label="Từ vựng đã đánh giá" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" id="vocab-progress-track"><div class="fill" id="vocab-bar"></div></div></div><div class="vocab-toolbar"><button class="btn btn-ghost" id="vocab-reveal-all"><svg class="icon" aria-hidden="true"><use href="#i-eye"/></svg>Mở tất cả</button><button class="btn btn-ghost" id="vocab-hide-all"><svg class="icon" aria-hidden="true"><use href="#i-eye-off"/></svg>Thu gọn</button></div></div>
+      <div class="vocab-grid" id="vocab-grid"></div>
+      <div class="learning-tip"><svg class="icon" aria-hidden="true"><use href="#i-spark"/></svg> Không cần vội. Mỗi từ bạn nhớ là một bước tiến.</div>
+    </section>
+    <section class="panel" id="panel-grammar" role="tabpanel" aria-labelledby="tab-grammar" hidden>
+      <div class="section-heading"><div><span class="eyebrow section-kicker">HIỂU CÁCH DIỄN ĐẠT</span><h2>Ngữ pháp</h2><p>Từ cấu trúc đến câu nói của riêng bạn.</p></div><span class="section-count">40 cấu trúc</span></div>
+      <div class="lesson-picker glass"><div class="picker-heading"><span>Chọn bài học</span><div class="scroll-actions"><button class="icon-btn small" data-scroll="grammar-lesson-tabs" data-direction="-1" aria-label="Cuộn về bài trước"><svg class="icon" aria-hidden="true"><use href="#i-left"/></svg></button><button class="icon-btn small" data-scroll="grammar-lesson-tabs" data-direction="1" aria-label="Cuộn đến bài sau"><svg class="icon" aria-hidden="true"><use href="#i-right"/></svg></button></div></div><div class="lesson-tabs" id="grammar-lesson-tabs" role="group" aria-label="Bài học ngữ pháp"></div></div>
+      <div id="grammar-list"></div>
+    </section>
+    <section class="panel" id="panel-exercise" role="tabpanel" aria-labelledby="tab-exercise" hidden>
+      <div class="section-heading"><div><span class="eyebrow section-kicker">THỬ SỨC MỘT CHÚT</span><h2>Luyện tập</h2><p>Củng cố điều vừa học, từng câu một.</p></div><span class="section-count" id="practice-bank-count">Bộ luyện mới</span></div>
+      <div id="practice-root"></div>
+    </section>
+    <section class="panel" id="panel-progress" role="tabpanel" aria-labelledby="tab-progress" hidden>
+      <div class="section-heading"><div><span class="eyebrow section-kicker">TỪNG BƯỚC ĐỀU ĐÁNG GIÁ</span><h2>Tiến độ của bạn</h2><p>Nhìn lại những gì đã học. Sẵn sàng cho điều tiếp theo.</p></div></div>
+      <div class="stat-grid" id="stat-grid"></div><h3 class="subheading">Bộ từ vựng của bạn</h3><div class="vocab-breakdown" id="vocab-breakdown"></div><div class="filtered-list" id="filtered-list" aria-live="polite"></div>
+      <div class="review-box glass"><div class="review-symbol"><svg class="icon" aria-hidden="true"><use href="#i-refresh"/></svg></div><div class="review-copy"><span class="eyebrow">MỘT CHÚT ÔN TẬP HÔM NAY</span><div class="big" id="review-count">0 từ cần ôn</div><p>Gặp lại từ cũ để nhớ lâu hơn.</p></div><button class="btn btn-seal" id="start-review-btn">Bắt đầu ôn <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></button></div>
+      <button class="btn reset-btn" id="reset-progress-btn"><svg class="icon" aria-hidden="true"><use href="#i-trash"/></svg>Xoá tiến độ học</button>
+    </section>
+    <footer class="note"><span class="footer-brand">HSK3 <span>·</span> Mã Thị Huyền Bích</span><span>Tiến độ tự động lưu trên trình duyệt này.</span></footer>
+  </main>
+  <nav class="main glass" role="tablist" aria-label="Không gian học" aria-orientation="horizontal">
+    <button id="tab-vocab" data-tab="vocab" class="active" role="tab" aria-controls="panel-vocab" aria-selected="true"><svg class="icon" aria-hidden="true"><use href="#i-book"/></svg><span>Từ vựng</span></button>
+    <button id="tab-grammar" data-tab="grammar" role="tab" aria-controls="panel-grammar" aria-selected="false" tabindex="-1"><svg class="icon" aria-hidden="true"><use href="#i-layers"/></svg><span>Ngữ pháp</span></button>
+    <button id="tab-exercise" data-tab="exercise" role="tab" aria-controls="panel-exercise" aria-selected="false" tabindex="-1"><svg class="icon" aria-hidden="true"><use href="#i-pen"/></svg><span>Luyện tập</span></button>
+    <button id="tab-progress" data-tab="progress" role="tab" aria-controls="panel-progress" aria-selected="false" tabindex="-1"><svg class="icon" aria-hidden="true"><use href="#i-chart"/></svg><span>Tiến độ</span></button>
+  </nav>
+  <div class="speech-feedback glass" id="speech-feedback" hidden>
+    <p id="speech-message" role="status"></p>
+    <audio id="speech-fallback" controls preload="none" aria-label="Phát âm tiếng Trung" hidden></audio>
+    <button class="btn btn-ghost" id="speech-dismiss">Đóng</button>
+  </div>
+  <script src="assets/js/data.js"></script><script src="assets/js/audio-map.js"></script><script src="assets/js/practice-content.js"></script><script src="assets/js/practice-engine.js"></script><script src="assets/js/app.js"></script><script src="assets/js/practice-ui.js"></script>
+</body>
+</html>

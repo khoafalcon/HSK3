@@ -1,0 +1,12 @@
+node_modules/
+__pycache__/
+*.pyc
+.audio-build/
+.practice-test/
+.portable-test/
+.env
+.env.*
+!.env.example
+Thumbs.db
+.DS_Store
+*.tmp
